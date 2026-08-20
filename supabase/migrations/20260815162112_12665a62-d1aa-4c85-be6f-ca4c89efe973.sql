@@ -1,0 +1,1 @@
+DROP INDEX IF EXISTS public.jobs_embedding_ivfflat_idx;

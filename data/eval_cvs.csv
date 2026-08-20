@@ -1,0 +1,402 @@
+cv_id,name,track,level,is_eval,relevant_job_ids,raw_text
+CV001,Rami Haddad,frontend,Junior,true,"[""J0001"",""J0011"",""J0021"",""J0031"",""J0041"",""J0051"",""J0061"",""J0071"",""J0081"",""J0091"",""J0101"",""J0111"",""J0121"",""J0131"",""J0141"",""J0151"",""J0161"",""J0171""]","Rami Haddad
+Frontend Engineer
+Beirut, Lebanon | rami.haddad@example.com | +961 3 000 000 | github.com/rami
+
+EDUCATION
+BSc in Software Engineering — American University of Beirut
+Graduated 2025
+
+TECHNICAL SKILLS
+React, Jest, Redux, HTML, JavaScript, CSS, Accessibility (WCAG), French (intermediate), Arabic (native)
+
+EXPERIENCE
+Junior Frontend Engineer, Harbor Cloud
+Sep 2024 - Present — Deliver features across the product backlog, fix production issues and improve test coverage.
+
+Engineering Intern, Nasma Technologies
+Jun 2024 - Aug 2024 — Prototyped internal tooling and documented onboarding processes.
+
+PROJECTS
+Course Registration Portal
+Rebuilt a university course registration flow in React with optimistic updates, reducing perceived load time by 40%.
+
+Personal Finance Dashboard
+Charting dashboard in React + Recharts with CSV import and local persistence."
+CV002,Lynn Abou Khalil,backend,Intern,true,"[""J0002"",""J0012"",""J0032"",""J0062"",""J0072"",""J0082"",""J0112"",""J0122"",""J0132"",""J0142"",""J0162"",""J0172""]","Lynn Abou Khalil
+Aspiring Backend Engineer
+Beirut, Lebanon | lynn.abou.khalil@example.com | +961 3 000 000 | github.com/lynn
+
+EDUCATION
+BSc in Software Engineering — Lebanese American University
+Graduated Expected 2027
+
+TECHNICAL SKILLS
+Node.js, Git, REST APIs, Docker, English (fluent), Agile/Scrum
+
+EXPERIENCE
+Software Engineering Intern, Nasma Technologies
+Jun 2025 - Sep 2025 — Shipped scoped features under mentorship, wrote unit tests and participated in code review.
+
+PROJECTS
+Ride Sharing API
+REST API in Django with JWT auth, trip matching and PostGIS distance queries.
+
+Inventory Service
+Node/Express microservice with Redis caching and rate limiting, deployed via Docker."
+CV003,Karim Nassar,data_ml,Mid-level,true,"[""J0004"",""J0014"",""J0044"",""J0054"",""J0064"",""J0074"",""J0084"",""J0094"",""J0104"",""J0124"",""J0134"",""J0144"",""J0174""]","Karim Nassar
+Machine Learning Engineer
+Beirut, Lebanon | karim.nassar@example.com | +961 3 000 000 | github.com/karim
+
+EDUCATION
+BSc in Information Technology — Rafik Hariri University
+Graduated 2022
+
+TECHNICAL SKILLS
+Machine Learning, Deep Learning, Transformers, NumPy, Pandas, SQL, Jupyter, scikit-learn, LangChain,
+English (fluent), Arabic (native)
+
+EXPERIENCE
+Machine Learning Engineer, Kanzi Commerce
+Feb 2023 - Present — Own a service area end to end, mentor one junior engineer and lead technical design
+discussions.
+
+Junior Machine Learning Engineer, Harbor Cloud
+Jul 2021 - Jan 2023 — Built and maintained core product features and improved CI reliability.
+
+PROJECTS
+Arabic Sentiment Classifier
+Fine-tuned a transformer on Arabic tweets, reaching 0.87 macro F1 on a held-out set.
+
+Traffic Forecasting
+LSTM and gradient boosting comparison for hourly traffic volume prediction."
+CV004,Maya Chidiac,fullstack,Junior,true,"[""J0003"",""J0013"",""J0023"",""J0033"",""J0043"",""J0053"",""J0063"",""J0073"",""J0083"",""J0093"",""J0103"",""J0113"",""J0123"",""J0133"",""J0143"",""J0153"",""J0163"",""J0173""]","Maya Chidiac
+Full Stack Engineer
+Beirut, Lebanon | maya.chidiac@example.com | +961 3 000 000 | github.com/maya
+
+EDUCATION
+BSc in Computer and Communications Engineering — Lebanese University
+Graduated 2025
+
+TECHNICAL SKILLS
+MongoDB, TypeScript, React, Git, JavaScript, Docker, CI/CD, Git, Agile/Scrum
+
+EXPERIENCE
+Junior Full Stack Engineer, Meridian Health Tech
+Sep 2024 - Present — Deliver features across the product backlog, fix production issues and improve test coverage.
+
+Engineering Intern, Kanzi Commerce
+Jun 2024 - Aug 2024 — Prototyped internal tooling and documented onboarding processes.
+
+PROJECTS
+Campus Marketplace
+MERN app for student-to-student resale with image upload and chat.
+
+Clinic Booking System
+Next.js + Supabase appointment booking with role-based access."
+CV005,Hadi Mansour,mobile,Junior,true,"[""J0006"",""J0016"",""J0026"",""J0036"",""J0046"",""J0056"",""J0066"",""J0076"",""J0086"",""J0096"",""J0106"",""J0116"",""J0126"",""J0136"",""J0146"",""J0156"",""J0166"",""J0176""]","Hadi Mansour
+Mobile Developer
+Beirut, Lebanon | hadi.mansour@example.com | +961 3 000 000 | github.com/hadi
+
+EDUCATION
+BSc in Software Engineering — Notre Dame University - Louaize
+Graduated 2025
+
+TECHNICAL SKILLS
+React Native, REST APIs, Git, Dart, Swift, Kotlin, Offline Sync, Arabic (native), Agile/Scrum
+
+EXPERIENCE
+Junior Mobile Developer, Byblos Analytics
+Sep 2024 - Present — Deliver features across the product backlog, fix production issues and improve test coverage.
+
+Engineering Intern, Jounieh Digital
+Jun 2024 - Aug 2024 — Prototyped internal tooling and documented onboarding processes.
+
+PROJECTS
+Pharmacy Finder
+Flutter app locating open pharmacies with offline caching and map clustering.
+
+Habit Tracker
+React Native app with local notifications and streak analytics."
+CV006,Nour Sleiman,devops,Mid-level,true,"[""J0007"",""J0027"",""J0047"",""J0057"",""J0077"",""J0097"",""J0127"",""J0137"",""J0147"",""J0157"",""J0167"",""J0177""]","Nour Sleiman
+DevOps Engineer
+Beirut, Lebanon | nour.sleiman@example.com | +961 3 000 000 | github.com/nour
+
+EDUCATION
+BSc in Software Engineering — Rafik Hariri University
+Graduated 2022
+
+TECHNICAL SKILLS
+Nginx, Docker, Linux, GitHub Actions, Terraform, Kubernetes, CI/CD, Monitoring, GCP, Arabic (native),
+French (intermediate)
+
+EXPERIENCE
+DevOps Engineer, Cornet Software
+Feb 2023 - Present — Own a service area end to end, mentor one junior engineer and lead technical design
+discussions.
+
+Junior DevOps Engineer, NorthStar Remote
+Jul 2021 - Jan 2023 — Built and maintained core product features and improved CI reliability.
+
+PROJECTS
+Cluster Bootstrap
+Terraform + Kubernetes setup provisioning a 3-node cluster with monitoring.
+
+CI Pipeline Overhaul
+GitHub Actions matrix build cutting pipeline time from 14 to 5 minutes."
+CV007,Elie Karam,qa,Intern,true,"[""J0008"",""J0018"",""J0028"",""J0038"",""J0048"",""J0068"",""J0078"",""J0088"",""J0108"",""J0118"",""J0128"",""J0138"",""J0148"",""J0178""]","Elie Karam
+Aspiring QA Engineer
+Beirut, Lebanon | elie.karam@example.com | +961 3 000 000 | github.com/elie
+
+EDUCATION
+BSc in Computer Science — Notre Dame University - Louaize
+Graduated Expected 2027
+
+TECHNICAL SKILLS
+Cypress, Selenium, Test Automation, Jira, Agile/Scrum, English (fluent)
+
+EXPERIENCE
+Software Engineering Intern, Zaitoun Labs
+Jun 2025 - Sep 2025 — Shipped scoped features under mentorship, wrote unit tests and participated in code review.
+
+PROJECTS
+E2E Regression Suite
+Cypress suite covering 60 critical paths, wired into CI with flake reporting.
+
+API Contract Tests
+Postman + Newman collection validating 40 endpoints on every deploy."
+CV008,Tala Fakhoury,security,Junior,true,"[""J0009"",""J0019"",""J0029"",""J0039"",""J0049"",""J0059"",""J0069"",""J0079"",""J0089"",""J0099"",""J0109"",""J0119"",""J0129"",""J0139"",""J0149"",""J0159"",""J0169"",""J0179""]","Tala Fakhoury
+Security Analyst
+Beirut, Lebanon | tala.fakhoury@example.com | +961 3 000 000 | github.com/tala
+
+EDUCATION
+BSc in Computer and Communications Engineering — Beirut Arab University
+Graduated 2025
+
+TECHNICAL SKILLS
+SIEM, Linux, Cryptography, Wireshark, OWASP Top 10, Python, Burp Suite, Arabic (native), Git
+
+EXPERIENCE
+Junior Security Analyst, Atlas Fintech
+Sep 2024 - Present — Deliver features across the product backlog, fix production issues and improve test coverage.
+
+Engineering Intern, BlueRidge Labs
+Jun 2024 - Aug 2024 — Prototyped internal tooling and documented onboarding processes.
+
+PROJECTS
+Web App Pentest Lab
+Documented OWASP Top 10 exploitation and remediation on a deliberately vulnerable app.
+
+SIEM Alert Tuning
+Reduced false positives by 35% by rewriting correlation rules."
+CV009,Omar Zeineddine,embedded,Mid-level,true,"[""J0010"",""J0020"",""J0030"",""J0050"",""J0070"",""J0080"",""J0110"",""J0120"",""J0130"",""J0160""]","Omar Zeineddine
+Embedded Engineer
+Beirut, Lebanon | omar.zeineddine@example.com | +961 3 000 000 | github.com/omar
+
+EDUCATION
+BSc in Information Technology — Lebanese American University
+Graduated 2022
+
+TECHNICAL SKILLS
+Hardware Debugging, Python, RTOS, Linux, C, C++, Embedded C, ARM Cortex, MQTT, English (fluent),
+Arabic (native)
+
+EXPERIENCE
+Embedded Engineer, Jounieh Digital
+Feb 2023 - Present — Own a service area end to end, mentor one junior engineer and lead technical design
+discussions.
+
+Junior Embedded Engineer, Zaitoun Labs
+Jul 2021 - Jan 2023 — Built and maintained core product features and improved CI reliability.
+
+PROJECTS
+Smart Irrigation Node
+STM32 firmware with soil sensors and LoRa uplink, running on FreeRTOS.
+
+Energy Meter
+ESP32 power monitor publishing over MQTT with a local web config portal."
+CV010,Perla Rizk,data_engineering,Junior,true,"[""J0005"",""J0015"",""J0025"",""J0035"",""J0045"",""J0055"",""J0065"",""J0075"",""J0085"",""J0095"",""J0105"",""J0115"",""J0125"",""J0135"",""J0145"",""J0155"",""J0165"",""J0175""]","Perla Rizk
+Data Engineer
+Beirut, Lebanon | perla.rizk@example.com | +961 3 000 000 | github.com/perla
+
+EDUCATION
+BSc in Data Science — Beirut Arab University
+Graduated 2025
+
+TECHNICAL SKILLS
+Airflow, Spark, Data Warehousing, Python, dbt, PostgreSQL, BigQuery, Agile/Scrum, Git
+
+EXPERIENCE
+Junior Data Engineer, Atlas Fintech
+Sep 2024 - Present — Deliver features across the product backlog, fix production issues and improve test coverage.
+
+Engineering Intern, Atlas Fintech
+Jun 2024 - Aug 2024 — Prototyped internal tooling and documented onboarding processes.
+
+PROJECTS
+Retail Sales Warehouse
+Built an Airflow DAG loading daily sales into a star schema with dbt tests.
+
+Log Pipeline
+Streaming ingestion prototype with Kafka into Postgres with partitioned tables."
+CV011,Jad Bou Saab,data_ml,Intern,true,"[""J0014"",""J0024"",""J0034"",""J0064"",""J0094"",""J0114"",""J0124"",""J0154"",""J0164""]","Jad Bou Saab
+Aspiring Machine Learning Engineer
+Beirut, Lebanon | jad.bou.saab@example.com | +961 3 000 000 | github.com/jad
+
+EDUCATION
+BSc in Information Technology — Lebanese American University
+Graduated Expected 2027
+
+TECHNICAL SKILLS
+scikit-learn, Transformers, NumPy, Jupyter, Arabic (native), English (fluent)
+
+EXPERIENCE
+Software Engineering Intern, Byblos Analytics
+Jun 2025 - Sep 2025 — Shipped scoped features under mentorship, wrote unit tests and participated in code review.
+
+PROJECTS
+Arabic Sentiment Classifier
+Fine-tuned a transformer on Arabic tweets, reaching 0.87 macro F1 on a held-out set.
+
+Traffic Forecasting
+LSTM and gradient boosting comparison for hourly traffic volume prediction."
+CV012,Sarah Ghanem,frontend,Mid-level,true,"[""J0001"",""J0021"",""J0031"",""J0051"",""J0061"",""J0071"",""J0081"",""J0101"",""J0111"",""J0141"",""J0151"",""J0161"",""J0171""]","Sarah Ghanem
+Frontend Engineer
+Beirut, Lebanon | sarah.ghanem@example.com | +961 3 000 000 | github.com/sarah
+
+EDUCATION
+BSc in Information Technology — Holy Spirit University of Kaslik
+Graduated 2022
+
+TECHNICAL SKILLS
+Redux, JavaScript, CSS, Jest, Tailwind CSS, TypeScript, Next.js, Vite, Accessibility (WCAG), English
+(fluent), Agile/Scrum
+
+EXPERIENCE
+Frontend Engineer, NorthStar Remote
+Feb 2023 - Present — Own a service area end to end, mentor one junior engineer and lead technical design
+discussions.
+
+Junior Frontend Engineer, Solaris Energy Tech
+Jul 2021 - Jan 2023 — Built and maintained core product features and improved CI reliability.
+
+PROJECTS
+Course Registration Portal
+Rebuilt a university course registration flow in React with optimistic updates, reducing perceived load time by 40%.
+
+Personal Finance Dashboard
+Charting dashboard in React + Recharts with CSV import and local persistence."
+CV013,Fadi Aoun,backend,Intern,true,"[""J0002"",""J0012"",""J0032"",""J0062"",""J0072"",""J0082"",""J0112"",""J0122"",""J0132"",""J0142"",""J0162"",""J0172""]","Fadi Aoun
+Aspiring Backend Engineer
+Beirut, Lebanon | fadi.aoun@example.com | +961 3 000 000 | github.com/fadi
+
+EDUCATION
+BSc in Software Engineering — Notre Dame University - Louaize
+Graduated Expected 2027
+
+TECHNICAL SKILLS
+Django, Redis, SQL, PostgreSQL, Git, Arabic (native)
+
+EXPERIENCE
+Software Engineering Intern, Harbor Cloud
+Jun 2025 - Sep 2025 — Shipped scoped features under mentorship, wrote unit tests and participated in code review.
+
+PROJECTS
+Ride Sharing API
+REST API in Django with JWT auth, trip matching and PostGIS distance queries.
+
+Inventory Service
+Node/Express microservice with Redis caching and rate limiting, deployed via Docker."
+CV014,Rita Khoury,fullstack,Mid-level,true,"[""J0013"",""J0023"",""J0033"",""J0043"",""J0063"",""J0083"",""J0103"",""J0113"",""J0123"",""J0143"",""J0153"",""J0163"",""J0173""]","Rita Khoury
+Full Stack Engineer
+Beirut, Lebanon | rita.khoury@example.com | +961 3 000 000 | github.com/rita
+
+EDUCATION
+BE in Computer and Communications Engineering — Holy Spirit University of Kaslik
+Graduated 2022
+
+TECHNICAL SKILLS
+Git, Express, PostgreSQL, MongoDB, JavaScript, Docker, Node.js, React, CI/CD, Git, French (intermediate)
+
+EXPERIENCE
+Full Stack Engineer, Anfeh Digital
+Feb 2023 - Present — Own a service area end to end, mentor one junior engineer and lead technical design
+discussions.
+
+Junior Full Stack Engineer, Almaz Interactive
+Jul 2021 - Jan 2023 — Built and maintained core product features and improved CI reliability.
+
+PROJECTS
+Campus Marketplace
+MERN app for student-to-student resale with image upload and chat.
+
+Clinic Booking System
+Next.js + Supabase appointment booking with role-based access."
+CV015,Bilal Osman,data_ml,Junior,true,"[""J0004"",""J0014"",""J0024"",""J0034"",""J0044"",""J0054"",""J0064"",""J0074"",""J0084"",""J0094"",""J0104"",""J0114"",""J0124"",""J0134"",""J0144"",""J0154"",""J0164"",""J0174""]","Bilal Osman
+Machine Learning Engineer
+Beirut, Lebanon | bilal.osman@example.com | +961 3 000 000 | github.com/bilal
+
+EDUCATION
+BSc in Computer Science — Rafik Hariri University
+Graduated 2025
+
+TECHNICAL SKILLS
+NumPy, Transformers, scikit-learn, Jupyter, Pandas, Machine Learning, RAG, Git, Arabic (native)
+
+EXPERIENCE
+Junior Machine Learning Engineer, Cedar Systems
+Sep 2024 - Present — Deliver features across the product backlog, fix production issues and improve test coverage.
+
+Engineering Intern, Jounieh Digital
+Jun 2024 - Aug 2024 — Prototyped internal tooling and documented onboarding processes.
+
+PROJECTS
+Arabic Sentiment Classifier
+Fine-tuned a transformer on Arabic tweets, reaching 0.87 macro F1 on a held-out set.
+
+Traffic Forecasting
+LSTM and gradient boosting comparison for hourly traffic volume prediction."
+CV016,Nadia,,,false,[],"Nadia Saliba
+Operations Coordinator seeking a move into technology
+Beirut, Lebanon | nadia.saliba@example.com | +961 3 000 000
+
+EDUCATION
+BA in Business Administration — Lebanese University
+Graduated 2019
+
+Online certificates
+Google Data Analytics Certificate (2025), freeCodeCamp Responsive Web Design (2026)
+
+SKILLS
+Microsoft Excel (advanced), Google Sheets, data entry and cleaning, reporting, basic Python (self-taught),
+SQL basics, English (fluent), Arabic (native), French (fluent)
+
+EXPERIENCE
+Operations Coordinator, A regional trading company
+2020 - Present — Manage supplier records, prepare monthly performance reports, coordinate between three
+departments and maintain the internal filing system.
+
+Administrative Assistant, A local consultancy
+2019 - 2020 — Scheduling, correspondence and invoice tracking.
+
+PROJECTS
+Monthly report automation
+Wrote a small Python script that merges spreadsheets and produces the monthly summary that previously took two
+days by hand.
+
+Personal portfolio site
+Built a simple static page while following an online course."
+CV017,Ziad,,,false,[],"Ziad Haddad
+Computer Science student
+Tripoli, Lebanon | ziad.haddad@example.com | +961 3 000 000
+
+EDUCATION
+BSc in Computer Science — Lebanese University
+Second year, expected 2029
+
+SKILLS
+C, HTML, problem solving, teamwork
+
+PROJECTS
+Course project
+A calculator program written in C for the introductory programming course."
