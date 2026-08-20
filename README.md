@@ -24,7 +24,7 @@ Live demo: https://talent-bridge-lebanon.lovable.app
 Lebanese CS graduates apply blindly: job boards are keyword-based, don't understand
 transferable skills, and don't tell you *why* you were rejected or *what to learn next*.
 TalentBridge closes that loop with a retrieval-augmented agent that is **measurable** —
-every ranking change is validated against a labelled benchmark of 15 labelled CVs were used in the reported benchmark run with a
+every ranking change is validated against a labelled benchmark of 15 CVs with a
 Precision@5 harness built into the app.
 
 ## Dataset
@@ -90,7 +90,7 @@ src/lib/skill-match.ts    canonical skill normalisation + shared matched/missing
 src/lib/eval.server.ts    Precision@5 benchmark harness across the labelled CV set
 src/lib/mcp/             MCP server and its four tools
 supabase/migrations/     full schema: tables, RLS, grants, match_jobs_vector()
-data/                    exported datasets (180 jobs, 15 labelled CVs used in the reported benchmark run; the CSV contains 17 rows including 2 adversarial demo profiles)
+data/                    exported datasets (180 jobs; 15 labelled benchmark CVs + 2 demo profiles)
 ```
 
 ## Pages
