@@ -8,6 +8,15 @@ re-ranks with Lebanon-aware and seniority-aware signals, and writes a personalis
 
 Live demo: https://talent-bridge-lebanon.lovable.app
 
+**Results (benchmark run: 2026-08-20 15:51)**
+
+| Metric | Value |
+| --- | --- |
+| Mean Precision@5 | 0.84, across 15 labelled CVs |
+| Retrieval stage | 467 ms per CV (CV parse + embedding + vector search) |
+| Full agent run | ~15–20 seconds end to end, including the LLM steps |
+| Index coverage | 180 of 180 jobs embedded |
+
 ---
 
 ## Why this project
@@ -15,8 +24,21 @@ Live demo: https://talent-bridge-lebanon.lovable.app
 Lebanese CS graduates apply blindly: job boards are keyword-based, don't understand
 transferable skills, and don't tell you *why* you were rejected or *what to learn next*.
 TalentBridge closes that loop with a retrieval-augmented agent that is **measurable** —
-every ranking change is validated against a labelled benchmark of 17 CVs with a
+every ranking change is validated against a labelled benchmark of 15 labelled CVs were used in the reported benchmark run with a
 Precision@5 harness built into the app.
+
+## Dataset
+
+The 180-job corpus and the labelled benchmark CVs are synthetic, generated with AI assistance.
+Job titles, seniority levels, and skill combinations were modelled on real job postings from
+Lebanon and the wider region so the distribution reflects the actual market, while company
+names are fictional. The data was generated for two reasons: there is no public dataset of
+Lebanese job listings that could be used, and the benchmark requires a correct track label
+on every job, which scraped postings do not have.
+
+A direct limitation is that results are demonstrated on clean, well-structured records.
+Performance on real-world postings, which are messier and often incomplete, has not been
+measured.
 
 ## Features
 
@@ -24,7 +46,7 @@ Precision@5 harness built into the app.
 - **Semantic retrieval** — 384-dim embeddings over 180 jobs, exact cosine search in Postgres (`pgvector`).
 - **Deterministic, hallucination-proof scoring** — matched/missing skills and readiness are computed in code from the database's `required_skills`, never by the model. The narrative prose is derived from those exact sets, so the text can never contradict the lists.
 - **Lebanon-first re-ranking** — final score = `0.35·semantic + 0.20·readiness + 0.25·location + 0.15·seniority + 0.05·domain`, with tiered location fit (Lebanese city 1.0 → remote 0.95 → MENA 0.75) and an over-leveled penalty.
-- **Built-in evaluation** — `/eval` runs the whole labelled CV set and reports mean Precision@5 and mean latency, with session-local run history.
+- **Built-in evaluation** — `/eval` runs the whole labelled CV set and reports mean Precision@5 and mean retrieval latency, with session-local run history.
 - **PDF parsing in the browser** — `pdfjs-dist` extracts CV text client-side; nothing is stored until matching starts.
 - **MCP server** — `/mcp` exposes `search_jobs`, `get_job`, `assess_fit` and `job_index_stats` so any MCP client (Claude, Cursor, …) can query the corpus.
 - **Downloadable report** — the results page exports a Markdown report identical to what is on screen.
@@ -68,7 +90,7 @@ src/lib/skill-match.ts    canonical skill normalisation + shared matched/missing
 src/lib/eval.server.ts    Precision@5 benchmark harness across the labelled CV set
 src/lib/mcp/             MCP server and its four tools
 supabase/migrations/     full schema: tables, RLS, grants, match_jobs_vector()
-data/                    exported datasets (180 jobs, 17 benchmark CVs)
+data/                    exported datasets (180 jobs, 15 labelled CVs used in the reported benchmark run; the CSV contains 17 rows including 2 adversarial demo profiles)
 ```
 
 ## Pages
@@ -78,21 +100,28 @@ data/                    exported datasets (180 jobs, 17 benchmark CVs)
 | `/` | Pick a benchmark CV or upload your own, then run the agent. |
 | `/results` | Parsed profile, top 5 matches with match %, gap analysis per match, 4-week plan, report download. Session-only — visitors never see someone else's run. |
 | `/admin` | Job index: CSV import, embedding coverage, corpus integrity check. |
-| `/eval` | Runs the agent across every labelled CV and reports mean Precision@5 and latency. |
+| `/eval` | Runs the agent across every labelled CV and reports mean Precision@5 and mean retrieval latency. |
 
 ## Evaluation
 
 Ground truth lives in `eval_cvs.relevant_job_ids`. For each CV the harness runs the
 *exact same* pipeline a visitor gets (including re-ranking) and computes
 `Precision@5 = |top5 ∩ relevant| / 5`, then averages across the set together with
-per-CV latency. Because relevance is defined by track *and* compatible seniority,
+per-CV retrieval latency. Because relevance is defined by track *and* compatible seniority,
 ranking changes are validated rather than guessed.
 
 ## Running locally
 
 ```sh
-git clone <this-repository-url>
+git clone https://github.com/ak8x6/talent-bridge-lebanon.git
 cd talent-bridge-lebanon
+bun install
+bun run dev            # http://localhost:8080
+```
+
+If you prefer npm:
+
+```sh
 npm install
 npm run dev            # http://localhost:8080
 ```
