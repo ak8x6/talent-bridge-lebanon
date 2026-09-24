@@ -1,6 +1,11 @@
 # TalentBridge Lebanon
 
 **An AI career-matching agent for Lebanese computer-science graduates.**
+
+[![Developed during LebNet Tech Fellows](https://img.shields.io/badge/Developed%20during-LebNet%20Tech%20Fellows-7c3aed)](https://lebnet.us/TechFellows)
+
+> This project was developed as my final capstone project during the [LebNet Tech Fellows](https://lebnet.us/TechFellows) program.
+
 Upload a CV, and an LLM agent parses the profile, retrieves roles from an embedded job
 corpus by semantic similarity, computes a deterministic skill gap for each role,
 re-ranks with Lebanon-aware and seniority-aware signals, and writes a personalised
@@ -27,6 +32,23 @@ TalentBridge closes that loop with a retrieval-augmented agent that is **measura
 every ranking change is validated against a labelled benchmark of 15 CVs with a
 Precision@5 harness built into the app.
 
+## Program context
+
+TalentBridge Lebanon was developed as my final applied project during the **LebNet Tech Fellows** program.
+
+The project applies practical concepts from the program — retrieval-augmented generation,
+semantic search, embeddings, agentic workflows, evaluation, and responsible AI — to a
+real problem affecting Lebanese CS graduates.
+
+- **Program:** [LebNet Tech Fellows](https://lebnet.us/TechFellows)
+- **Project type:** Final capstone / applied project
+- **Author:** Ahmad Kassem
+- **Focus:** AI-assisted career matching for Lebanese CS graduates
+- **Deliverables:** Working web application, technical implementation, benchmark evaluation, and live demo
+
+This acknowledgment reflects the educational context of the project and does not imply
+official ownership, sponsorship, or endorsement by LebNet.
+
 ## Dataset
 
 The 180-job corpus and the labelled benchmark CVs are synthetic, generated with AI assistance.
@@ -44,8 +66,8 @@ measured.
 
 - **Agentic pipeline** — `parse_cv` → `search_jobs` → `reflect_on_results` → `analyze_gap` → `build_plan`, orchestrated deterministically with a reflection-driven retry.
 - **Semantic retrieval** — 384-dim embeddings over 180 jobs, exact cosine search in Postgres (`pgvector`).
-- **Deterministic, hallucination-proof scoring** — matched/missing skills and readiness are computed in code from the database's `required_skills`, never by the model. The narrative prose is derived from those exact sets, so the text can never contradict the lists.
-- **Lebanon-first re-ranking** — final score = `0.35·semantic + 0.20·readiness + 0.25·location + 0.15·seniority + 0.05·domain`, with tiered location fit (Lebanese city 1.0 → remote 0.95 → MENA 0.75) and an over-leveled penalty.
+- **Deterministic, hallucination-proof scoring** — matched/missing skills and readiness are computed in code from the database's `required_skills`, never by the model. The narrative prose is deliberately grounded to the evidence.
+- **Lebanon-first re-ranking** — final score = `0.35·semantic + 0.20·readiness + 0.25·location + 0.15·seniority + 0.05·domain`, with tiered location fit (Lebanese city 1.0 → remote 0.95 → other region 0.80).
 - **Built-in evaluation** — `/eval` runs the whole labelled CV set and reports mean Precision@5 and mean retrieval latency, with session-local run history.
 - **PDF parsing in the browser** — `pdfjs-dist` extracts CV text client-side; nothing is stored until matching starts.
 - **MCP server** — `/mcp` exposes `search_jobs`, `get_job`, `assess_fit` and `job_index_stats` so any MCP client (Claude, Cursor, …) can query the corpus.
