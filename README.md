@@ -32,23 +32,6 @@ TalentBridge closes that loop with a retrieval-augmented agent that is **measura
 every ranking change is validated against a labelled benchmark of 15 CVs with a
 Precision@5 harness built into the app.
 
-## Program context
-
-TalentBridge Lebanon was developed as my final applied project during the **LebNet Tech Fellows** program.
-
-The project applies practical concepts from the program — retrieval-augmented generation,
-semantic search, embeddings, agentic workflows, evaluation, and responsible AI — to a
-real problem affecting Lebanese CS graduates.
-
-- **Program:** [LebNet Tech Fellows](https://lebnet.us/TechFellows)
-- **Project type:** Final capstone / applied project
-- **Author:** Ahmad Kassem
-- **Focus:** AI-assisted career matching for Lebanese CS graduates
-- **Deliverables:** Working web application, technical implementation, benchmark evaluation, and live demo
-
-This acknowledgment reflects the educational context of the project and does not imply
-official ownership, sponsorship, or endorsement by LebNet.
-
 ## Dataset
 
 The 180-job corpus and the labelled benchmark CVs are synthetic, generated with AI assistance.
